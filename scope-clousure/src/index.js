@@ -111,3 +111,52 @@
 // }
 
 // countNumbers();
+
+// let Person = class {
+//   constructor(time) {
+//     this.time = time;
+//   }
+
+//   read(word) {
+//     if (!word) {
+//       return "You must enter some text to read.";
+//     }
+//     let letters = Array.from(word);
+//     let timeSpendToRead = letters.length * this.time;
+//     return `Time spend to read is: ${timeSpendToRead}`;
+//   }
+// };
+
+// let Student = class extends Person {
+//   constructor() {
+//     super(2);
+//   }
+// };
+
+// let Teacher = class extends Person {
+//   constructor() {
+//     super(3);
+//   }
+// };
+
+// const studentPerson = new Student();
+// console.log("typeof studentPerson :>> ", studentPerson === Student);
+// console.log(studentPerson.read("hola"));
+
+// const teacherPerson = new Teacher();
+// console.log(
+//   "typeof teacherPerson :>> ",
+//   teacherPerson.constructor.name === "Teacher"
+// );
+// console.log(teacherPerson.read("hola"));
+
+let numbers = [];
+
+for (let i = 0; i < 10; i++) {
+  numbers.push(i);
+}
+
+const suma = numbers.reduce((acc, curr) => acc + curr, 0);
+
+console.log("numbers :>> ", numbers);
+console.log("suma :>> ", suma);
